@@ -49,8 +49,7 @@ class _0ques_ViewController: UIViewController {
                 showans.text = QnaArray[timestart % 10].Ans
         }
     }
-    
-    
+        
     //下一題
     
     @IBAction func nextques(_ sender: Any) {
