@@ -49,7 +49,7 @@ class _0ques_ViewController: UIViewController {
 
         timeslab += 1
         if timeslab % 10 > timestart {
-            showans.text = "不可以偷看答案"
+            showans.text = "你看到的是國防布"
         }
         else{
              pictureview.isHidden = false

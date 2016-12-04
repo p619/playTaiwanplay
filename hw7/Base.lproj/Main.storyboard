@@ -33,8 +33,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="101煙火" highlightedImage="iseetaiwan101" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-xR-R8e">
-                                        <rect key="frame" x="-241" y="262" width="1111" height="442"/>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="101煙火" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-xR-R8e">
+                                        <rect key="frame" x="1" y="254" width="367" height="386"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="臺灣-63059031" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-dG-iTm">
@@ -120,7 +120,6 @@
     </scenes>
     <resources>
         <image name="101煙火" width="225" height="150"/>
-        <image name="iseetaiwan101" width="960" height="540"/>
         <image name="臺灣-63059031" width="1300" height="1390"/>
     </resources>
 </document>
