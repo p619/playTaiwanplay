@@ -33,6 +33,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="101煙火" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-xR-R8e">
+                                        <rect key="frame" x="-241" y="262" width="1111" height="442"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="臺灣-63059031" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-dG-iTm">
                                         <rect key="frame" x="0.0" y="254" width="375" height="450"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,9 +88,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="臺灣去哪玩？" id="WeT-8c-OZC"/>
                     <connections>
+                        <outlet property="pictureview" destination="vp9-xR-R8e" id="pK3-px-G7j"/>
                         <outlet property="ques" destination="Oph-du-V65" id="eZ0-X2-RfU"/>
                         <outlet property="showans" destination="sDv-xm-ykW" id="RBh-8y-zHd"/>
                         <outlet property="times" destination="vOt-pT-h1y" id="Kre-0z-rFQ"/>
+                        <outlet property="view" destination="vp9-xR-R8e" id="sfN-48-Qgs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,6 +119,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="101煙火" width="225" height="150"/>
         <image name="臺灣-63059031" width="1300" height="1390"/>
     </resources>
 </document>

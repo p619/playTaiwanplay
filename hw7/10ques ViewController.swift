@@ -13,6 +13,8 @@ class _0ques_ViewController: UIViewController {
     @IBOutlet weak var times: UILabel! //第幾題
     var timeslab = 0  //按了幾次
     
+
+    @IBOutlet weak var pictureview: UIImageView!
     
     var timestart = 0 //還沒按的時候
     @IBOutlet weak var ques: UILabel! //問題
@@ -22,19 +24,23 @@ class _0ques_ViewController: UIViewController {
     struct QNA {
         var Ques = ""
         var Ans = ""
+        var picture = UIImage(named:"1012")
     }
     
     var QnaArray = [
-        QNA(Ques:"請問臺灣最高的大樓在哪個縣市？",Ans:"臺北市"),
-        QNA(Ques:"請問大溪蜜月灣在哪個縣市？",Ans:"宜蘭縣"),
-        QNA(Ques:" 請問阿里山小火車在哪個縣市？",Ans:"嘉義縣"),
-        QNA(Ques:"請問日月潭在哪個縣市？",Ans:"南投"),
-        QNA(Ques:"請問光之穹頂是哪個縣市的捷運地標？",Ans:"高雄市"),
-        QNA(Ques:"請問炸寒單爺是哪個縣市的習俗？",Ans:"台東縣"),
-        QNA(Ques:"請問太魯閣峽谷在哪個縣市？",Ans:"花蓮縣"),
-        QNA(Ques:"請問水晶教堂在哪個縣市？",Ans:"台南市"),
-        QNA(Ques:"請問高美濕地在哪個縣市？",Ans:"台中"),
-        QNA(Ques:"請問九份老街在哪個縣市？",Ans:"新北市")
+        
+        QNA(Ques:"請問臺灣最高的大樓在哪個縣市？",Ans:"臺北市",picture: UIImage(named:"1012")),
+        
+        
+        QNA(Ques:"請問大溪蜜月灣在哪個縣市？",Ans:"宜蘭縣",picture: UIImage(named:"蜜月灣")),
+        QNA(Ques:" 請問阿里山小火車在哪個縣市？",Ans:"嘉義縣",picture: UIImage(named:"阿里山3")),
+        QNA(Ques:"請問日月潭在哪個縣市？",Ans:"南投",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問光之穹頂是哪個縣市的捷運地標？",Ans:"高雄市",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問炸寒單爺是哪個縣市的習俗？",Ans:"台東縣",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問太魯閣峽谷在哪個縣市？",Ans:"花蓮縣",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問水晶教堂在哪個縣市？",Ans:"台南市",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問高美濕地在哪個縣市？",Ans:"台中",picture: UIImage(named:"1012")),
+        QNA(Ques:"請問九份老街在哪個縣市？",Ans:"新北市",picture: UIImage(named:"1012"))
     ]
     
     //顯示答案
@@ -42,11 +48,13 @@ class _0ques_ViewController: UIViewController {
         
 
         timeslab += 1
-        if timeslab > timestart {
+        if timeslab % 10 > timestart {
             showans.text = "不可以偷看答案"
         }
         else{
-                showans.text = QnaArray[timestart % 10].Ans
+             pictureview.isHidden = false
+            showans.text = QnaArray[timestart % 10].Ans
+            pictureview.image = QnaArray[timestart % 10].picture
         }
     }
         
@@ -62,7 +70,7 @@ class _0ques_ViewController: UIViewController {
             timestart = timestart % 10
         
         }
-        times.text = "第\(timestart)題"
+        times.text = "\(timestart)."
         ques.text = QnaArray[timestart % 10 ].Ques
         showans.text = ""
     }
