@@ -64,7 +64,7 @@
                                         </connections>
                                     </button>
                                     <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="臺灣" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-xR-R8e">
-                                        <rect key="frame" x="-14" y="198" width="393" height="532"/>
+                                        <rect key="frame" x="-2" y="254" width="379" height="393"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -114,6 +114,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="臺灣" width="650" height="695"/>
+        <image name="臺灣" width="622" height="649"/>
     </resources>
 </document>

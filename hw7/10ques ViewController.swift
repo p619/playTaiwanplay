@@ -30,12 +30,12 @@ class _0ques_ViewController: UIViewController {
     var QnaArray = [
         
         QNA(Ques:"請問101大樓在哪個縣市？",Ans:"臺北市",picture: UIImage(named:"1012")),
-        QNA(Ques:"請問大溪蜜月灣在哪個縣市？",Ans:"宜蘭縣",picture: UIImage(named:"蜜月灣")),
+        QNA(Ques:"請問萊萊磯釣場在哪個縣市？",Ans:"宜蘭縣",picture: UIImage(named:"萊萊磯釣場")),
         QNA(Ques:" 請問阿里小火車在哪個縣市？",Ans:"嘉義縣",picture: UIImage(named:"阿里山3")),
         QNA(Ques:"請問日月潭在哪個縣市？",Ans:"南投",picture: UIImage(named:"日月潭")),
-        QNA(Ques:"請問光之穹頂在哪個縣市？",Ans:"高雄市",picture: UIImage(named:"光滄炅")),
-        QNA(Ques:"請問炸寒單習俗在哪個縣市？",Ans:"台東縣",picture: UIImage(named:"炸寒單")),
-        QNA(Ques:"請問太魯閣峽谷在哪個縣市？",Ans:"花蓮縣",picture: UIImage(named:"七星潭")),
+        QNA(Ques:"請問愛河在哪個縣市？",Ans:"高雄市",picture: UIImage(named:"高雄")),
+        QNA(Ques:"請問炸寒單是哪個縣市習俗？",Ans:"台東縣",picture: UIImage(named:"炸寒單")),
+        QNA(Ques:"請問七星潭在哪個縣市？",Ans:"花蓮縣",picture: UIImage(named:"七星潭")),
         QNA(Ques:"請問水晶教堂在哪個縣市？",Ans:"台南市",picture: UIImage(named:"水晶教堂")),
         QNA(Ques:"請問高美濕地在哪個縣市？",Ans:"台中",picture: UIImage(named:"高美夕陽")),
         QNA(Ques:"請問九份老街在哪個縣市？",Ans:"新北市",picture: UIImage(named:"九分2"))
